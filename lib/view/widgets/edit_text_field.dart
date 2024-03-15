@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:jitak_machine/view/widgets/label_text.dart';
 
@@ -32,7 +31,7 @@ class EditProfileTextfield extends StatelessWidget {
             height: size.width < 700 ? size.width / 25 : size.width / 28,
           ),
         SizedBox(
-          height: size.width < 700 ? 30 : 90,
+          height: size.width < 700 ? 45 : 90,
           child: TextField(
             onTap: onTap,
             keyboardType: isPhoneNumber != null

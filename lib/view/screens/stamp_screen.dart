@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class StampScreen extends StatelessWidget {
   const StampScreen({super.key});
@@ -20,14 +21,19 @@ class StampScreen extends StatelessWidget {
         centerTitle: true,
         leading: Padding(
           padding: const EdgeInsets.only(left: 5.0, top: 5),
-          child: CircleAvatar(
-            backgroundColor: const Color(0xFF949EFF),
-            child: Padding(
-              padding: const EdgeInsets.only(left: 8.0),
-              child: Icon(
-                Icons.arrow_back_ios,
-                size: size.width / 20,
-                color: Colors.white,
+          child: InkWell(
+            onTap: () {
+              Get.back();
+            },
+            child: CircleAvatar(
+              backgroundColor: const Color(0xFF949EFF),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 8.0),
+                child: Icon(
+                  Icons.arrow_back_ios,
+                  size: size.width / 20,
+                  color: Colors.white,
+                ),
               ),
             ),
           ),
